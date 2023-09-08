@@ -1,6 +1,5 @@
 #include <stdio.h>
-
-
+#include <unistd.h>
 /**
  * main - Entry point
  * Description: prints char below 10
@@ -9,11 +8,13 @@
 
 int main(void)
 {
-	
-	int i;
+	int a;
 
-	for (i=0; i<10; i++)
-		putchar(i + '0');
+	for (a = 0; a < 10; a++)
+	{
+		putchar(a + '0');
+	}
 	putchar('\n');
-	return(0);
+	return (0);
 }
+
